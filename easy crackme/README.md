@@ -88,4 +88,5 @@
   - VirtualProtect function calls store 0x1 as return value in EAX register.
   - I have no idea what does this mean. Does VirtualProtect function has a saying in deciding the password was correct or not?
 
+- UGGGHHH CAN'T SOLVE IT YET
 
