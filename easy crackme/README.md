@@ -84,6 +84,8 @@
     - 00007ff774bb1079  cmp     eax, 0xa
     - 00007ff774bb107c  je      0x7ff774bb1085
 
-  - 
+  - the sub_7ff774bb1000 function doesn't store any return value.
+  - VirtualProtect function calls store 0x1 as return value in EAX register.
+  - I have no idea what does this mean. Does VirtualProtect function has a saying in deciding the password was correct or not?
 
 
