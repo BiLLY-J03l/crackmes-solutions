@@ -70,7 +70,20 @@
     - 00007ff774bb1257  mov     rax, qword [r12]
 
     - ![image](https://github.com/user-attachments/assets/86473a0e-29aa-4633-ab23-2c2bdcca0830)
+   
+  - after furthur debugging, I deduced that the below instruction outputs the "yes" or "no" string to the terminal, but I suspect that's not where the meat is.
+    - 00007ff774bb11cf  call    qword [rel std::basic_streambuf<char,struct std::char_traits<char> >::sputn] 
 
+  - I guess the main function has some connection with the password but I can't get it yet.
+    - ![image](https://github.com/user-attachments/assets/80441880-4af8-46ee-9643-8d298dfa82c2)
 
+  - I know that for sure that the below instructions are a bit suspicious.
+    - 00007ff774bb1066  call    sub_7ff774bb1000
+    - 00007ff774bb106b  mov     rcx, qword [rel std::cout]
+    - 00007ff774bb1072  lea     rdx, [rel data_7ff774bb32b0]
+    - 00007ff774bb1079  cmp     eax, 0xa
+    - 00007ff774bb107c  je      0x7ff774bb1085
+
+  - 
 
 
