@@ -65,7 +65,12 @@
 
   - ![image](https://github.com/user-attachments/assets/66a79991-c926-48c2-bc11-ae0b4df96101)
     
-  - it calls the sub_7ff774bb10b0 function, it might has some more useful information because then the function would end.
+  - it calls the sub_7ff774bb10b0 function, it might has some more useful information because then the main function would end.
+  - the sub_7ff774bb10b0 function was so huge, so I set up a breakpoint at 00007ff774bb1257 near the end and resumed the execution and "no" was printed to the buffer.
+    - 00007ff774bb1257  mov     rax, qword [r12]
+
+    - ![image](https://github.com/user-attachments/assets/86473a0e-29aa-4633-ab23-2c2bdcca0830)
+
 
 
 
