@@ -27,12 +27,45 @@
   - I will set a breakpoint there on the first instruction in the main function and start the dynamic analysis from there.
     - 140001010  mov     qword [rsp+0x8 {__saved_rbx}], rbx 
 
-- Start the debugger and see how it works under the hood.
-- ![image](https://github.com/user-attachments/assets/ce971bce-75e1-4d24-bdf9-8453dea83683)
-- keep stepping till you find something useful.
-- make sure to ignore most of the data.
-- ![image](https://github.com/user-attachments/assets/48abc685-058d-4a59-a123-c184b6e6bb39)
-- this is the meat of the executable.
 
-  - 00007ff774bb1428  call    sub_7ff774bb175c
-  - analyze this function to see if it has some calculations to be done with the password.
+**DYNAMIC ANALYSIS**:
+  - set the cmdline args to 123 or any other testing paramter.
+  
+  - ![image](https://github.com/user-attachments/assets/25e76db8-681e-40ca-b684-d89ebfba63d5)
+
+  - it hit the breakpoint and from here we start to debug step by step.
+  
+  - ![image](https://github.com/user-attachments/assets/439f884a-3231-44da-9174-940a5b0fd9d1)
+
+  - we step into sub_7ff774bb1000 function
+    - 00007ff774bb1066  call    sub_7ff774bb1000
+    - ![image](https://github.com/user-attachments/assets/72e3ebbb-efca-4d15-9c31-682ba844d967)
+    - counldn't gather valid data from that function, so I move on.
+
+  - ![image](https://github.com/user-attachments/assets/81e9aca6-1acc-424d-8f57-aafca36fcd53)
+
+  - 00007ff774bb1072  lea     rdx, [rel data_7ff774bb32b0]
+  
+  - that .data section to be copied into rdx is the "YES" string. Now we have some useful data flow.
+    
+    - ![image](https://github.com/user-attachments/assets/8899fa11-d148-463b-bb06-6e1bc3de5e22)
+   
+  - it then compares the eax register to 0xa (10 in decimal), and the rax register has the value of 0x1.
+
+    - 00007ff774bb1079  cmp     eax, 0xa
+    - 00007ff774bb107c  je      0x7ff774bb1085
+    - ![image](https://github.com/user-attachments/assets/d9d3cb01-0ea8-4700-9f3b-5b07cae6dc43)
+  
+  - it doesn't take the jump and moves to the next instruction
+    - 00007ff774bb107e  lea     rdx, [rel data_7ff774bb32b4]
+      
+  - that .data section to be copied into rdx is the "NO" string.
+
+     - ![image](https://github.com/user-attachments/assets/cecf9761-6590-43f1-b3e8-6e90119aa507)
+
+  - ![image](https://github.com/user-attachments/assets/66a79991-c926-48c2-bc11-ae0b4df96101)
+    
+  - it calls the sub_7ff774bb10b0 function, it might has some more useful information because then the function would end.
+
+
+
