@@ -8,10 +8,16 @@
 
 - that's turkish for login failed.
 
-## Use Binary Ninja or any other debugger you like.
+## Use Use dnSpy for debugging as this crackme was written in .NET.
 
 **STATIC ANALYSIS**:
 
-----------------------------------------------------------------------------------------------------------------------------------
+- ![image](https://github.com/user-attachments/assets/3b15d5cd-657b-4210-abb4-95bcad52603e)
 
-**DYNAMIC ANALYSIS**:
+- here is the string comparsion used in the authentication.
+  
+- ![image](https://github.com/user-attachments/assets/0d5ac54c-afb7-4a4e-a936-095e820da427)
+
+- ![image](https://github.com/user-attachments/assets/aff1a9b8-25a7-4528-9c42-dda9612c34c1)
+
+- Bingo, program cracked! and there is no need for dynamic analysis.
