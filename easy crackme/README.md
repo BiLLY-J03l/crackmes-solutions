@@ -27,6 +27,7 @@
   - I will set a breakpoint there on the first instruction in the main function and start the dynamic analysis from there.
     - 140001010  mov     qword [rsp+0x8 {__saved_rbx}], rbx 
 
+----------------------------------------------------------------------------------------------------------------------------------
 
 **DYNAMIC ANALYSIS**:
   - set the cmdline args to 123 or any other testing paramter.
