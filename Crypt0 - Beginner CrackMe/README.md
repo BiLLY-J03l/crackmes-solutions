@@ -4,7 +4,7 @@
 ## First, run the program know what it does.
   
   - ![image](https://github.com/user-attachments/assets/b360f980-4f95-4f5a-b185-8039c6cc1839)
-  - 
+    
 ## Use IDA or any other debugger you like.
 
 **STATIC ANALYSIS**:
