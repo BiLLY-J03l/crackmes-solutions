@@ -7,16 +7,16 @@
 - ![image](https://github.com/user-attachments/assets/3ff09233-5762-4690-9b82-0ebe724718c5)
 
     
-## Use x64dbg or any other debugger you like.
+## Analysis.
 
-**STATIC ANALYSIS**:
+**STATIC ANALYSIS - IDA**:
 
 - ![image](https://github.com/user-attachments/assets/0e76cf91-2840-4a91-ac0f-f473bcc812ba)
 
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
-**DYNAMIC ANALYSIS**:
+**DYNAMIC ANALYSIS - x64dbg**:
 
 - ![image](https://github.com/user-attachments/assets/3be79d61-d53a-469a-bc2d-feab82cc25a3)
 
