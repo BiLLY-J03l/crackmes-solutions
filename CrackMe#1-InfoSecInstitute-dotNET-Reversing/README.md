@@ -1,4 +1,4 @@
-# crackme link -> https://crackmes.one/crackme/5ca5c1ac33c5d4419da556de
+# crackme link -> https://crackmes.one/crackme/68503ad02b84be7ea7743936
 
 
 
@@ -7,7 +7,7 @@
   - ![image](https://github.com/user-attachments/assets/6ee37ace-c998-41fb-843e-40e6473e1c17)
 
     
-## Use Use dnSpy for debugging as this crackme was written in .NET.
+## Use dnSpy for debugging as this crackme was written in .NET.
 
 **STATIC ANALYSIS**:
 
