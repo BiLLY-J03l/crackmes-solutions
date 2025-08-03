@@ -1,4 +1,4 @@
-<img width="1474" height="541" alt="image" src="https://github.com/user-attachments/assets/dadac448-d984-4ee7-aa8c-a23734ebc771" /><img width="1474" height="541" alt="image" src="https://github.com/user-attachments/assets/879a2c3e-4714-45ac-8f2e-216ffa281724" /># crackme link -> https://crackmes.one/crackme/5ab77f6533c5d40ad448cb5f
+crackme link -> https://crackmes.one/crackme/5ab77f6533c5d40ad448cb5f
 
 
 ## First, run the program know what it does.
