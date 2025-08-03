@@ -66,6 +66,11 @@ crackme link -> https://crackmes.one/crackme/5ab77f6533c5d40ad448cb5f
     - the first addition yields in 10, which is A in hex.
     - the second addition yields in 20, which is 14 in hex.
     - <img width="367" height="112" alt="image" src="https://github.com/user-attachments/assets/89731f71-952f-4695-b53b-c429390a3940" />
+    - the compare set the ZF to 1 meaning the values are equal.
+    - <img width="482" height="64" alt="image" src="https://github.com/user-attachments/assets/58585389-e020-44ca-a8a5-ac02ab21e7c4" />
+    - then, we continue to run the .exe and get the success result.
+    - <img width="711" height="199" alt="image" src="https://github.com/user-attachments/assets/8d7542d3-787c-4ad3-a24a-c6f4272f1738" />
+
 
 
 
