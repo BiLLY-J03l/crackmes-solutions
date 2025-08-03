@@ -65,6 +65,7 @@ crackme link -> https://crackmes.one/crackme/5ab77f6533c5d40ad448cb5f
     - <img width="354" height="111" alt="image" src="https://github.com/user-attachments/assets/accb3b85-fd12-41eb-ae9d-11ee0cae7d8c" />
     - the first addition yields in 10, which is A in hex.
     - the second addition yields in 20, which is 14 in hex.
-    - 
+    - <img width="367" height="112" alt="image" src="https://github.com/user-attachments/assets/89731f71-952f-4695-b53b-c429390a3940" />
+
 
 
